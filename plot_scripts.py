@@ -1,6 +1,6 @@
 
 # coding: utf-8
-
+#haha
 # In[ ]:
 
 get_ipython().magic(u'matplotlib inline')
@@ -15,7 +15,7 @@ rc('text', usetex = True);
 
 # In[ ]:
 
-fontsize = fs;
+fontsize = fs1;
 fig = plt.figure(figsize = (10,4));
 
 fig.add_subplot(1, 2, 1);
