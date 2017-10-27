@@ -52,8 +52,9 @@ ax1 = fig.add_subplot(1,2,1);
 ax1.plot(x, y1, linewidth=3, label='linear function' );
 ax1.scatter(x, y3, c='r', edgecolors='face', label='sine function');
 
-ax1.set_xlim(left=0, right=5);
-ax1.set_xticks([0, pi, 3*pi/2]);
+ax1.set_xscale('log');
+ax1.set_xlim(left=0.5, right=5);
+ax1.set_xticks([ pi, 3*pi/2]);
 ax1.set_xlabel('time', {'fontsize': word_fs});
 ax1.xaxis.set_major_formatter(plt.FuncFormatter(format_func));
 
