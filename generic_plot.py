@@ -48,7 +48,7 @@ word_fs = 20;
 legend_fs = 14;
 number_fs = 15;
 
-ax1 = fig.add_subplot(1,2,1);
+ax1 = fig.add_subplot(1,2,1); #create axes object
 ax1.plot(x, y1, linewidth=3, label='linear function' );
 ax1.scatter(x, y3, c='r', edgecolors='face', label='sine function');
 
@@ -61,8 +61,8 @@ ax1.xaxis.set_major_formatter(plt.FuncFormatter(format_func));
 ax1.set_ylim(bottom=-1.2, top=5);
 ax1.set_yticks([0,2,4]);
 ax1.set_ylabel('distance', {'fontsize': word_fs});
-ax1.tick_params(labelsize=number_fs);
 
+ax1.tick_params(labelsize=number_fs); #set the fontsize of ticks
 ax1.legend( bbox_to_anchor=(0.66, 1), fontsize=legend_fs, shadow=True);
 ax1.set_title('Simple functions', {'fontsize': word_fs} );
 
